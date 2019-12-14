@@ -1,18 +1,33 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+  <the-navigation/>
+  <h1 class="title">Search</h1>
+    <movie-search-form/>
+    <movie-list :movies="movies"/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+
+import MovieSearchForm from '@/components/MovieSearchForm.vue';
+import MovieList from '@/components/MovieList.vue';
+import TheNavigation from '@/components/TheNavigation.vue';
 
 export default {
   name: 'home',
   components: {
-    HelloWorld,
+    MovieSearchForm,
+    MovieList,
+    TheNavigation,
+  },
+  data() {
+    return {
+      movies: [
+        {
+          title: '',
+        },
+      ],
+    };
   },
 };
 </script>
