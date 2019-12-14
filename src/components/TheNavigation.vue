@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import LocaleChanger from '@/components/LocaleChanger.vue';
+import LocaleChanger from './LocaleChanger.vue';
 
 export default {
   name: 'TheNavigation',

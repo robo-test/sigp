@@ -10,10 +10,10 @@
 
 <script>
 
-import MovieSearchForm from '@/components/MovieSearchForm.vue';
-import MovieList from '@/components/MovieList.vue';
-import TheNavigation from '@/components/TheNavigation.vue';
-import Pagination from '@/components/Pagination.vue';
+import MovieSearchForm from '../components/MovieSearchForm.vue';
+import MovieList from '../components/MovieList.vue';
+import TheNavigation from '../components/TheNavigation.vue';
+import Pagination from '../components/Pagination.vue';
 
 export default {
   name: 'home',

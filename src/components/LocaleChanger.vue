@@ -8,9 +8,11 @@
 
 <script>
 export default {
-  name: 'locale-changer',
+  name: 'LocaleChanger',
   data() {
-    return { langs: ['sk', 'en'] };
+    return {
+        langs: ['sk', 'en']
+    };
   },
 };
 </script>

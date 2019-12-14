@@ -8,8 +8,8 @@
 <script>
 
 import Axios from 'axios';
-import TheNavigation from '@/components/TheNavigation.vue';
-import MovieDetailTable from '@/components/MovieDetailTable.vue';
+import TheNavigation from '../components/TheNavigation.vue';
+import MovieDetailTable from '../components/MovieDetailTable.vue';
 
 export default {
   name: 'detail',

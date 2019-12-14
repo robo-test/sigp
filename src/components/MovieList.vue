@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import MovieListItem from '@/components/MovieListItem.vue';
+import MovieListItem from './MovieListItem.vue';
 
 export default {
   name: 'MovieList',
