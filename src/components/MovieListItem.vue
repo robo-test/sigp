@@ -1,6 +1,8 @@
 <template>
   <li class="list-item">
-    <router-link :to="{name: 'detail', params: {movie: movie}}">{{movie.Title}}</router-link>
+    <router-link :to="{name: 'detail', params: {movieId: movie.imdbID}}">
+        {{movie.Title}}
+    </router-link>
   </li>
 </template>
 

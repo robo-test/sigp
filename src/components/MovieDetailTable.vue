@@ -10,8 +10,9 @@
             <tr v-for="(value, name, index) in movie" :key="index">
                 <th>
                 <span>{{name}}</span>
-                    <span v-if="name === 'Title'" class="icon fa-star"
-                    @click="addToFavourites"></span>
+                    <span v-if="name === 'Title'" class="icon" @click="addToFavourites">
+                        <i class="fas fa-star"></i>
+                    </span>
                 </th>
                 <th>{{value}}</th>
             </tr>
@@ -44,3 +45,11 @@ export default {
   },
 };
 </script>
+
+<style scoped lang="stylus">
+    .icon {
+        &:hover, &:focus {
+            cursor pointer
+        }
+    }
+</style>

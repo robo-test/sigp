@@ -1,6 +1,6 @@
 <template>
     <div class="section">
-        <ul class="list is-hoverable">
+        <ul class="list is-hoverable" v-if="movies.length > 0">
             <movie-list-item v-for="(movie, index) in movies" :key="index" :movie="movie"/>
         </ul>
     </div>
@@ -17,6 +17,9 @@ export default {
   computed: {
     movies() {
       return this.$store.getters.getMovies;
+    },
+    moviesCount() {
+      return this.$store.getters.getMoviesCount;
     },
   },
 };

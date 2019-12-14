@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <the-navigation/>
-    <h1 class="title">Favourite</h1>
+    <h1 class="title">{{ $t("message.favourite")}}</h1>
       <div class="section">
 
-      <div class="columns">
+      <div class="columns is-multiline">
         <div v-for="(movie, index) in movies" :key="index" class="card column is-one-third">
           <div class="card-image">
             <figure class="image is-4by3">
@@ -17,9 +17,12 @@
             </div>
           </div>
           <footer class="card-footer">
-            <a href="#" class="card-footer-item">Detail</a>
+            <router-link :to="{name: 'detail', params: {movieId: movie.imdbID}}"
+              class="card-footer-item">
+              Detail
+            </router-link>
             <a href="#" class="card-footer-item" @click.once="removeItem" :data-id="index">
-            Delete
+            {{ $t("message.delete")}}
             </a>
           </footer>
         </div>
